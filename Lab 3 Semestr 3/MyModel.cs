@@ -17,7 +17,7 @@ namespace Lab_3_Semestr_3
 
         public event Action Changed;
 
-        public void AddNode(int value)
+        public void AddNode(Pen value)
         {
             nodes.AddFirst(new Node(value, r.Next(50,500), r.Next(150,400)));
             if (Changed != null) Changed();

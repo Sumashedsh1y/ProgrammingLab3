@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,6 @@ namespace Lab_3_Semestr_3
 {
     public partial class Form1 : Form, IController
     {
-        static Random r = new Random();
         private IModel model;
         public Form1()
         {
@@ -43,7 +43,7 @@ namespace Lab_3_Semestr_3
         }
         public void Add()
         {
-            model.AddNode(r.Next(100));
+            model.AddNode(Pens.Red);
 
         }
         public void AddView(IView v)
@@ -68,10 +68,6 @@ namespace Lab_3_Semestr_3
         private void myDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-        private void PanelView1_NodeClicked(Node node)
-        {
-            
         }
     }
 }

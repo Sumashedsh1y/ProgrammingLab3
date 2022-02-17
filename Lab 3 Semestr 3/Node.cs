@@ -12,10 +12,11 @@ namespace Lab_3_Semestr_3
         private int x, y;
         public Pen color = Pens.Red;
 
-        public Node(int value, int x, int y)
+        public Node(Pen color, int x, int y)
         {
             this.x = x;
             this.y = y;
+            this.color = color;
         }
 
         public int X { get => x; }

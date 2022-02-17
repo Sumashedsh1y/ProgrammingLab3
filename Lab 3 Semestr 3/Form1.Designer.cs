@@ -63,12 +63,13 @@ namespace Lab_3_Semestr_3
             // 
             // myDataGridView1
             // 
+            this.myDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.myDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.myDataGridView1.Location = new System.Drawing.Point(603, 13);
             this.myDataGridView1.Model = null;
             this.myDataGridView1.Name = "myDataGridView1";
-            this.myDataGridView1.RowHeadersWidth = 51;
-            this.myDataGridView1.RowTemplate.Height = 24;
+            this.myDataGridView1.RowHeadersWidth = 30;
+            this.myDataGridView1.RowTemplate.Height = 30;
             this.myDataGridView1.Size = new System.Drawing.Size(467, 530);
             this.myDataGridView1.TabIndex = 4;
             this.myDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.myDataGridView1_CellContentClick);

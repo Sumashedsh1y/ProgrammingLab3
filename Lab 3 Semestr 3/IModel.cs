@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace Lab_3_Semestr_3
 
         int Count { get; }
 
-        void AddNode(int value);
+        void AddNode(Pen value);
 
         void RemoveNode(Node value);
 
