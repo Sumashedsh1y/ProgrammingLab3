@@ -19,7 +19,7 @@ namespace Lab_3_Semestr_3
 
         public void AddNode(Pen value)
         {
-            nodes.AddFirst(new Node(value, r.Next(50,500), r.Next(150,400)));
+            nodes.AddFirst(new Node(value, r.Next(50,500), r.Next(50,400)));
             if (Changed != null) Changed();
         }
 
@@ -41,13 +41,13 @@ namespace Lab_3_Semestr_3
                 double lenght = Math.Sqrt(Math.Pow(temp[i].X - x, 2) + Math.Pow(temp[i].Y - y, 2));
                 if (lenght <= 10)
                 {
-                    temp[i].Color = Pens.Blue;
+                    temp[i].ColorType = Pens.Blue;
                     for (int j = 0; j < nodes.Count; j++)
                     {
                         double lenght_circles = Math.Sqrt(Math.Pow(temp[i].X - temp[j].X, 2) + Math.Pow(temp[i].Y - temp[j].Y, 2));
                         if (lenght_circles <= 21)
                         {
-                            temp[j].Color = Pens.Blue;
+                            temp[j].ColorType = Pens.Blue;
                         }
                     }
                 }

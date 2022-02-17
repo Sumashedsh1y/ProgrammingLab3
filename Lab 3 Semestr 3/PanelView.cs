@@ -37,7 +37,7 @@ namespace Lab_3_Semestr_3
             Graphics g = e.Graphics;
             foreach (Node n in Model.AllNodes)
             {
-                g.DrawEllipse(n.Color, n.X - 10, n.Y - 10, 20, 20);
+                g.DrawEllipse(n.ColorType, n.X - 10, n.Y - 10, 20, 20);
             }
         }
         protected override void OnMouseClick(MouseEventArgs e)
