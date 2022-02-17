@@ -43,7 +43,7 @@ namespace Lab_3_Semestr_3
         }
         public void Add()
         {
-            model.AddNode(r.Next(100));
+            model.AddNode(Pens.Red);
 
         }
         public void AddView(IView v)
